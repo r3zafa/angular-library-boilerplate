@@ -3,7 +3,7 @@
  * and update the `public-api.ts` file in an Angular library project.
  * 
  * @description
- * This script scans through predefined folders in the `src` directory, generates `_index.ts` files
+ * This script scans through predefined folders in the `src/lib` directory, generates `_index.ts` files
  * for each folder by re-exporting all `.ts` files (excluding `.spec.ts` and `_index.ts`), and updates
  * the `public-api.ts` file to include these barrel files. This helps in maintaining cleaner and more
  * organized imports across the application.
@@ -20,16 +20,15 @@
  *    - Update the `public-api.ts` file to include the generated `_index.ts` files.
  * 
  * @note
- * - The script assumes the `src` directory contains the folders listed in `foldersToUpdate`.
+ * - The script assumes the `src/lib` directory contains the folders listed in `foldersToUpdate`.
  * - Existing `_index.ts` files will be overwritten.
- * - Ensure you have write permissions for the `src` directory and its subdirectories.
+ * - Ensure you have write permissions for the `src/lib` directory and its subdirectories.
  */
 import fs from 'fs';
 import path from 'path';
 
-
-const baseDir = path.join(process.cwd(), 'src');
-const publicApiPath = path.join(baseDir, 'public-api.ts');
+const baseDir = path.join(process.cwd(), 'src/lib');
+const publicApiPath = path.join(baseDir, '../public-api.ts');
 const foldersToUpdate = [
   '_animations',
   '_constants',
@@ -51,7 +50,7 @@ const foldersToUpdate = [
 // Function to update public-api.ts
 function updatePublicApi(indexFiles) {
   const content = indexFiles
-    .map((indexFile) => `export * from './${indexFile.replace('.ts', '')}';`)
+    .map((indexFile) => `export * from './lib/${indexFile.replace('.ts', '')}';`)
     .join('\n');
 
   fs.writeFileSync(publicApiPath, content, 'utf8');

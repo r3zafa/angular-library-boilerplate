@@ -1,7 +1,7 @@
 import fs from 'fs';
 import path from 'path';
 
-const baseDir = path.join(process.cwd(), 'src');
+const baseDir = path.join(process.cwd(), 'src/lib');
 
 const structure = {
   _animations: ['_index.ts', 'example.animation.ts'],
@@ -19,6 +19,8 @@ const structure = {
   _types: ['_index.ts', 'example.type.ts'],
   _utilities: ['_index.ts', 'example.util.ts'],
   components: ['_index.ts', 'example.component.ts'],
+  '@assets/fonts': ['README.md'], // Placeholder for fonts
+  '@assets/images': ['README.md'], // Placeholder for images
 };
 
 // Function to create folders and files
@@ -55,6 +57,8 @@ function createStructure() {
           content = '{}';
         } else if (file.endsWith('.scss')) {
           content = `/* Example theme styles */`;
+        } else if (file === 'README.md') {
+          content = `# ${folder}\n\nThis folder contains ${folder.split('/').pop()} files.`;
         }
 
         fs.writeFileSync(filePath, content, 'utf8');
