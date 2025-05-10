@@ -1,3 +1,7 @@
+/*
+ * Public API Surface of example
+ */
+
 export * from './lib/_animations/_index';
 export * from './lib/_constants/_index';
 export * from './lib/_directives/_index';
