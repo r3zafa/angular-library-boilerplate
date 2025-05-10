@@ -1,0 +1,21 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": ["jasmine", "node"]
+  },
+  "files": ["src/test.ts"],
+  "include": ["src/**/*.spec.ts", "src/**/*.d.ts"],
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write ."
+  },
+  "exclude": [
+    "/coverage",
+    "*.log"
+  ]
+}

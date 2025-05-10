@@ -1,6 +1,36 @@
 # AngularLibraryBoilerplate
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.11.
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 18.2.11.
+
+## Using the Boilerplate
+
+This boilerplate is designed to help you quickly set up and develop Angular libraries. Follow these steps to get started:
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd angular-library-boilerplate
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   ng serve
+   ```
+
+4. Build the library:
+   ```bash
+   ng build
+   ```
+
+5. Publish your library to npm (optional):
+   ```bash
+   npm publish dist/<library-name>
+   ```
 
 ## Development server
 
