@@ -20,7 +20,6 @@ jobs:
       - run: npm ci
 
       # Step 4: Run tests
-      # - run: npm test
 
   publish:
     needs: build
