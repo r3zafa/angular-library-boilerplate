@@ -15,7 +15,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "update-index": "node _update-index-files.js",
+    "generate-structure": "node _generate-structure.js"
   },
   "repository": {
     "type": "git",

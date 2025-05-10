@@ -1,6 +1,15 @@
-/*
- * Public API Surface of example
- */
-
-export * from "./lib/example.component";
-export * from "./lib/example.service";
+export * from './_animations/_index';
+export * from './_constants/_index';
+export * from './_directives/_index';
+export * from './_enums/_index';
+export * from './_guards/_index';
+export * from './_interfaces/_index';
+export * from './_interceptors/_index';
+export * from './_models/_index';
+export * from './_pipes/_index';
+export * from './_resolvers/_index';
+export * from './_services/_index';
+export * from './_tokens/_index';
+export * from './_types/_index';
+export * from './_utilities/_index';
+export * from './components/_index';
