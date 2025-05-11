@@ -1,6 +1,6 @@
 {
   "name": "ngx-lib-starter-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A boilerplate for creating Angular libraries",
   "private": false,
   "license": "MIT",
@@ -21,7 +21,7 @@
     "copy-cli": "cp _create-lib.js dist/"
   },
   "bin": {
-    "create-lib": "./_create-angular-lib.js"
+    "create-lib": "./_create-lib.js"
   },
   "repository": {
     "type": "git",
