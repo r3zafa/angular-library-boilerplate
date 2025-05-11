@@ -1,6 +1,6 @@
 {
   "name": "ngx-lib-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A boilerplate for creating Angular libraries",
   "private": false,
   "license": "MIT",
@@ -41,7 +41,7 @@
   },
   "files": [
     "dist",
-    "_create-angular-lib.js",
+    "_create-lib.js",
     "src",
     "README.md",
     "LICENSE"
