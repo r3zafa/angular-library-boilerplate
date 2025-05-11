@@ -16,19 +16,19 @@
     "test": "ng test",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
-    "update-index": "node _update-index-files.js",
+    "update-index": "node _update-index.js",
     "generate-structure": "node _generate-structure.js",
-    "copy-cli": "cp _create-angular-lib.js dist/"
+    "copy-cli": "cp _create-lib.js dist/"
   },
   "bin": {
-    "create-angular-lib": "./_create-angular-lib.js"
+    "create-lib": "./_create-angular-lib.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/r3zafa/angular-library-boilerplate.git"
+    "url": "https://www.github.com/r3zafa/ngx-lib-starter.git"
   },
   "bugs": {
-    "url": "https://www.github.com/r3zafa/angular-library-boilerplate/issues"
+    "url": "https://www.github.com/r3zafa/ngx-lib-starter/issues"
   },
   "engines": {
     "node": ">=16.14.0"
@@ -85,6 +85,10 @@
     "npm",
     "angular-library",
     "angular-library-boilerplate",
-    "cli"
+    "cli",
+    "ngx-lib-starter",
+    "ngx",
+    "angular-cli",
+    "starter"
   ]
 }

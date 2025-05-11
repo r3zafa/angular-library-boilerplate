@@ -3,7 +3,7 @@
 const degit = require('degit');
 const path = require('path');
 
-const repo = 'r3zafa/angular-library-boilerplate';
+const repo = 'r3zafa/ngx-lib-starter';
 const emitter = degit(repo, {
   cache: false,
   force: true,

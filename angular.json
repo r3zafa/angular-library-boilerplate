@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-library-boilerplate": {
+    "ngx-lib-starter": {
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",
