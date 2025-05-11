@@ -17,4 +17,5 @@ emitter.clone(target).then(() => {
   console.log(`\n👉 Next steps:`);
   console.log(`cd ${target}`);
   console.log(`npm install`);
+  process.exit();
 });
