@@ -18,6 +18,12 @@ This boilerplate helps you quickly set up and develop Angular libraries. It incl
 
 ## Getting Started
 
+## Create a New Angular Library
+Use the following command to create a new Angular library:
+```bash
+npx angular-library-boilerplate-template my-new-project
+```
+
 ### 1. Clone the Repository
 Clone the repository and navigate to the project directory:
 ```bash

@@ -1,6 +1,6 @@
 {
   "name": "angular-library-boilerplate-template",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An Angular library boilerplate template",
   "private": false,
   "license": "MIT",
@@ -12,12 +12,16 @@
   "module": "dist/index.js",
   "scripts": {
     "ng": "ng",
-    "build": "ng build",
+    "build": "ng build && npm run copy-cli",
     "test": "ng test",
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "update-index": "node _update-index-files.js",
-    "generate-structure": "node _generate-structure.js"
+    "generate-structure": "node _generate-structure.js",
+    "copy-cli": "cp _create-angular-lib.js dist/"
+  },
+  "bin": {
+    "create-angular-lib": "./create-angular-lib.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +31,7 @@
     "url": "https://www.github.com/r3zafa/angular-library-boilerplate/issues"
   },
   "engines": {
-    "node": ">=16.14.0 <19"
+    "node": ">=16.14.0"
   },
   "exports": {
     ".": {
@@ -37,12 +41,14 @@
   },
   "files": [
     "dist",
+    "_create-angular-lib.js",
     "src",
     "README.md",
     "LICENSE"
   ],
   "dependencies": {
-     "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "degit": "^2.8.4"
   },
   "devDependencies": {
     "ng-packagr": "^18.0.0",
@@ -78,6 +84,7 @@
     "typescript",
     "npm",
     "angular-library",
-    "angular-library-boilerplate"
+    "angular-library-boilerplate",
+    "cli"
   ]
 }
