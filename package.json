@@ -1,6 +1,6 @@
 {
-  "name": "ngx-lib-starter",
-  "version": "1.0.3",
+  "name": "ngx-lib-starter-kit",
+  "version": "1.0.0",
   "description": "A boilerplate for creating Angular libraries",
   "private": false,
   "license": "MIT",
@@ -25,10 +25,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://www.github.com/r3zafa/ngx-lib-starter.git"
+    "url": "https://www.github.com/r3zafa/ngx-lib-starter-kit.git"
   },
   "bugs": {
-    "url": "https://www.github.com/r3zafa/ngx-lib-starter/issues"
+    "url": "https://www.github.com/r3zafa/ngx-lib-starter-kit/issues"
   },
   "engines": {
     "node": ">=16.14.0"
@@ -86,7 +86,7 @@
     "angular-library",
     "angular-library-boilerplate",
     "cli",
-    "ngx-lib-starter",
+    "ngx-lib-starter-kit",
     "ngx",
     "angular-cli",
     "starter"

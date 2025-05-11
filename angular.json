@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-lib-starter": {
+    "ngx-lib-starter-kit": {
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",

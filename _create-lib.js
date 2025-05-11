@@ -3,7 +3,7 @@
 const degit = require('degit');
 const path = require('path');
 
-const repo = 'r3zafa/ngx-lib-starter';
+const repo = 'r3zafa/ngx-lib-starter-kit';
 const emitter = degit(repo, {
   cache: false,
   force: true,

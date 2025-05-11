@@ -21,7 +21,7 @@ This boilerplate helps you quickly set up and develop Angular libraries. It incl
 ## Create a New Angular Library
 Use the following command to create a new Angular library:
 ```bash
-npx ngx-lib-starter my-lib
+npx ngx-lib-starter-kit my-lib
 ```
 
 OR
@@ -29,8 +29,8 @@ OR
 ### 1. Clone the Repository
 Clone the repository and navigate to the project directory:
 ```bash
-git clone https://github.com/your-repo/ngx-lib-starter.git
-cd ngx-lib-starter
+git clone https://github.com/your-repo/ngx-lib-starter-kit.git
+cd ngx-lib-starter-kit
 ```
 
 ### 2. Install Dependencies
