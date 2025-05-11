@@ -1,7 +1,7 @@
 {
-  "name": "angular-library-boilerplate-template",
-  "version": "1.0.3",
-  "description": "An Angular library boilerplate template",
+  "name": "ngx-lib-starter",
+  "version": "1.0.0",
+  "description": "A boilerplate for creating Angular libraries",
   "private": false,
   "license": "MIT",
   "type": "module",
@@ -21,7 +21,7 @@
     "copy-cli": "cp _create-angular-lib.js dist/"
   },
   "bin": {
-    "create-angular-lib": "./create-angular-lib.js"
+    "create-angular-lib": "./_create-angular-lib.js"
   },
   "repository": {
     "type": "git",
